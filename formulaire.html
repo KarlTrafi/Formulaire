@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="formulaire">
+        <form  class="form" action="app/envoyer.php" method="post">
+            <h1>Formulaire de Contact</h1>
+            <hr>
+            <div>
+                <label for="nom">Nom*</label>
+                <input name="nom" id="nom" type="text">
+            </div>
+            <div>
+                <label for="mail">Email*</label>
+                <input name="mail" id="mail" type="email" required>
+            </div>
+            <div>
+                <label for="objet">Objet*</label>
+                <input name="objet" id="objet" type="text">
+            </div>
+            <div>
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="checkForMail">
+                <label for="check">Recevoir un exemplaire du mail</label>
+                <input type="checkbox" id="check" name="returnMail" value="on">
+            </div>
+            <div>
+                <input name="mailForm" type="submit" value="Envoyer">
+            </div>
+        </form>
+    </section>
+</body>
+</html>
